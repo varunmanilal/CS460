@@ -1,0 +1,5 @@
+So, a good k(no of cluster points) should be one which identifies all cluster but shouldn’t cause cluster to group or clusters to break away into pieces.
+One was to do it is to find the optimal number of clusters by calculating the distance of points from its centroids with increasing number of k. So, what we want is lower value of k and less distance from the centroids. This can be done using KMeans.inertia. So in the graph initally distance decreases rapidly followed by lower decrease with increase in k. So , its good to set the value of k at the point when rapid decrease with increase in number of k stops.
+
+For DBSCAN, we need to vary the value of epsilon to find the right amount. Find the distance bw the closest point for every point and find the the right value of epsilon for which we can get an appropriate number of clusters by plotting. So this can be done using NearestNeighbors
+
